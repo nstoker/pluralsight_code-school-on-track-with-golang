@@ -24,15 +24,15 @@ func main() {
 
 	langs := getLangs()
 
-	for i := range langs {
-		fmt.Println(langs[i])
+	for _, language := range langs {
+		fmt.Println(language)
 	}
 
 	logrus.Infof("Normal exit")
 }
 
 func getLangs() []string {
-	return []string{} // {"Go", "Ruby", "C++", "APL"}
+	return []string{"Go", "Ruby", "C++", "APL"}
 }
 
 func getGreeting(hour int) (string, error) {
