@@ -9,8 +9,10 @@ import (
 
 func main() {
 	logrus.Infof("Starting up")
-	if len(os.Args) > 1 {
-		fmt.Println(os.Args[1])
+
+	args := os.Args
+	if len(args) > 1 {
+		fmt.Println(args)
 	} else {
 		fmt.Println("Hello, I am Gopher!")
 	}
