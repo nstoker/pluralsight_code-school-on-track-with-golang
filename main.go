@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"os"
+	"time"
 
 	"github.com/sirupsen/logrus"
 )
@@ -10,12 +10,18 @@ import (
 func main() {
 	logrus.Infof("Starting up")
 
-	args := os.Args
-	if len(args) > 1 {
-		fmt.Println(args)
-	} else {
-		fmt.Println("Hello, I am Gopher!")
+	hourOfDay := time.Now().Hour()
+	greeting := getGreeting(hourOfDay)
+	fmt.Println(greeting)
+	logrus.Infof("Normal exit")
+}
+
+func getGreeting(hour int) string {
+	if hour < 12 {
+		return "Good morning"
+	} else if hour < 18 {
+		return "Good afternoon"
 	}
 
-	logrus.Infof("Normal exit")
+	return "Good evening"
 }
