@@ -6,4 +6,4 @@
 - Initial files
 - Conditionals 1:
   - Extended main to re-write arguments, with a default.
-  - Added logging (#just because I could)
+  - Added logging (#just because I could
