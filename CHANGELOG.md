@@ -1,6 +1,9 @@
 
 # Unreleased
 
+- for loops
+- arrays and slices
+
 ## v0.0.2 2020-08-18
 
 - Use a variable to hold the Arguments.

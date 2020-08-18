@@ -20,6 +20,16 @@ func main() {
 	}
 
 	fmt.Println(greeting)
+	logrus.Info("It's Slice time")
+
+	var langs []string
+	langs = append(langs, "Go")
+	langs = append(langs, "Ruby")
+	langs = append(langs, "C++")
+	langs = append(langs, "APL")
+
+	fmt.Println(langs)
+
 	logrus.Infof("Normal exit")
 }
 
