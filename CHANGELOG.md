@@ -1,6 +1,8 @@
 
 # Unreleased
 
+## v0.0.2 2020-08-18
+
 - Use a variable to hold the Arguments.
 - Create a function to return a greeting message dependant on the hour of the day.
 - Added an error return value "Too early for Gophers"
