@@ -1,5 +1,15 @@
+# Changelog
 
-# Unreleased
+## Unreleased
+
+## v0.0.3 2020-08-18
+
+- for loops.
+- arrays and slices.
+  - the long way to initialise.
+  - a quicker initialise.
+  - `range`.
+    - Using index and element.
 
 ## v0.0.2 2020-08-18
 

@@ -20,7 +20,19 @@ func main() {
 	}
 
 	fmt.Println(greeting)
+	logrus.Info("It's Slice time")
+
+	langs := getLangs()
+
+	for _, language := range langs {
+		fmt.Println(language)
+	}
+
 	logrus.Infof("Normal exit")
+}
+
+func getLangs() []string {
+	return []string{"Go", "Ruby", "C++", "APL"}
 }
 
 func getGreeting(hour int) (string, error) {
