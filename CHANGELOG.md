@@ -1,5 +1,8 @@
+# Changelog
 
-# Unreleased
+## Unreleased
+
+## v0.0.3 2020-08-18
 
 - for loops.
 - arrays and slices.
