@@ -22,15 +22,17 @@ func main() {
 	fmt.Println(greeting)
 	logrus.Info("It's Slice time")
 
-	var langs []string
-	langs = append(langs, "Go")
-	langs = append(langs, "Ruby")
-	langs = append(langs, "C++")
-	langs = append(langs, "APL")
+	langs := getLangs()
 
-	fmt.Println(langs)
+	for i := range langs {
+		fmt.Println(langs[i])
+	}
 
 	logrus.Infof("Normal exit")
+}
+
+func getLangs() []string {
+	return []string{} // {"Go", "Ruby", "C++", "APL"}
 }
 
 func getGreeting(hour int) (string, error) {

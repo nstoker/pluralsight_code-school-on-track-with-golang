@@ -1,8 +1,11 @@
 
 # Unreleased
 
-- for loops
-- arrays and slices
+- for loops.
+- arrays and slices.
+  - the long way to initialise.
+  - a quicker initialise.
+  - `range`.
 
 ## v0.0.2 2020-08-18
 
